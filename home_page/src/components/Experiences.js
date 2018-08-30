@@ -17,6 +17,10 @@ const styles = theme => ({
     },
     divider:{
         margin:15
+    },
+    locationButton:{
+        paddingLeft:0,
+
     }
   });
 class Experiences extends Component {
@@ -37,7 +41,8 @@ class Experiences extends Component {
                             Chimera Investment Corporation
                             </Typography>
                             <Typography gutterBottom variant="subheading" color="textPrimary" component="h3">
-                          <Button color="primary" href="https://www.google.com/maps/search/?api=1&query=520 Madison Avenue, New York, NY 10022"> 
+                          <Button className={this.props.classes.locationButton} color="primary" href="https://www.google.com/maps/search/?api=1&query=520 Madison Avenue, New York, NY 10022"> 
+                             <img src="/images/location.svg" width="20" height="20"  />
                              520 Madison Avenue, New York, NY 10022
                          </Button>
                             </Typography>
@@ -61,7 +66,9 @@ class Experiences extends Component {
                                NYC Department of Health and Mental Hygiene
                             </Typography>
                             <Typography gutterBottom variant="subheading" color="textPrimary" component="h3">
-                                <Button color="primary" href="https://www.google.com/maps/search/?api=1&query=125 Worth St, New York, NY 10013">125 Worth St, New York, NY 10013</Button>
+                                <Button color="primary" href="https://www.google.com/maps/search/?api=1&query=125 Worth St, New York, NY 10013">
+                                <img src="/images/location.svg" width="20" height="20"  />
+                                125 Worth St, New York, NY 10013</Button>
                             </Typography>
                             <Typography>
                                 Used C# to develop desktop application<br/>
@@ -75,7 +82,6 @@ class Experiences extends Component {
                    
                     <Divider className={this.props.classes.divider}/>
 
-
                     <Grid container>
                          <Grid xs={3} align="center">
                          12/2013 - 06/2014
@@ -85,7 +91,9 @@ class Experiences extends Component {
                                NYC Administration for Children Service
                             </Typography>
                             <Typography gutterBottom variant="subheading" color="textPrimary" component="h3">
-                            <Button color="primary" href="https://www.google.com/maps/search/?api=1&query=150 William St, New York, NY 10038">150 William St, New York, NY 10038</Button>
+                            <Button color="primary" href="https://www.google.com/maps/search/?api=1&query=150 William St, New York, NY 10038">
+                            <img src="/images/location.svg" width="20" height="20"  />
+                            150 William St, New York, NY 10038</Button>
                             </Typography>
                             <Typography>
                                  Used knowledge of HTML, CSS and Javascript to modify web pages<br/>
