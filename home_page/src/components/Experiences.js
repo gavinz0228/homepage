@@ -6,6 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
+import Grid from '@material-ui/core/Grid'
 const styles = theme => ({
     title:{
         paddingLeft: 50,
@@ -15,7 +16,7 @@ const styles = theme => ({
         marginLeft:240
     },
     divider:{
-        margin:10
+        margin:15
     }
   });
 class Experiences extends Component {
@@ -23,50 +24,75 @@ class Experiences extends Component {
       return (
         <Card >
             <CardContent>
-                <Typography gutterBottom variant="headline" color="secondary" component="h2" className={this.props.classes.title}>
+                
+                    <Typography gutterBottom variant="headline" color="secondary" component="h2" className={this.props.classes.title}>
                     Experiences
-                </Typography>
-                <Typography component="p" className={this.props.classes.content} >
-                    <Typography gutterBottom variant="title" color="textPrimary" component="h3">
-                        Chimera Investment Corporation
                     </Typography>
-                    <Typography gutterBottom variant="subheading" color="textPrimary" component="h3">
-                        520 Madison Avenue, New York, NY 10022
-                    </Typography>
-                    Design tables and implement stored procedures for business applications in MS SQL database<br/>
-                    Impletement fornt-end and backend for businese applications<br/>
-                    Integrated Aladdin (BlackRock) and CAMRA(SS&C) for the company<br/>
-                    Maintain a generic job configuration application for all ETL operations<br/>
-                   
+                    <Grid container>
+                         <Grid xs={3} align="center">
+                         01/2016 - Present
+                         </Grid>
+                        <Grid xs={8}>
+                            <Typography gutterBottom variant="title" color="textPrimary" component="h3">
+                            Chimera Investment Corporation
+                            </Typography>
+                            <Typography gutterBottom variant="subheading" color="textPrimary" component="h3">
+                          <Button color="primary" href="https://www.google.com/maps/search/?api=1&query=520 Madison Avenue, New York, NY 10022"> 
+                             520 Madison Avenue, New York, NY 10022
+                         </Button>
+                            </Typography>
+                            <Typography>
+                            Design tables and implement stored procedures for business applications in MS SQL database<br/>
+                            Impletement fornt-end and backend for businese applications<br/>
+                            Integrated Aladdin (BlackRock) and CAMRA(SS&C) for the company<br/>
+                            Maintain a generic job configuration application for all ETL operations<br/>
+                            </Typography>
+                         </Grid>
+                    </Grid>
+
                     <Divider className={this.props.classes.divider}/>
                     
-                    <Typography gutterBottom variant="title" color="textPrimary" component="h3">
-                        Chimera Investment Corporation
-                    </Typography>
-                    <Typography gutterBottom variant="subheading" color="textPrimary" component="h3">
-                        520 Madison Avenue, New York, NY 10022
-                    </Typography>
-                    Design tables and implement stored procedures for business applications in MS SQL database<br/>
-                    Impletement fornt-end and backend for businese applications<br/>
-                    Integrated Aladdin (BlackRock) and CAMRA(SS&C) for the company<br/>
-                    Maintain a generic job configuration application for all ETL operations<br/>
+                    <Grid container>
+                         <Grid xs={3} align="center">
+                         07/2014 - 12/2015
+                         </Grid>
+                        <Grid xs={8}>
+                            <Typography gutterBottom variant="title" color="textPrimary" component="h3">
+                               NYC Department of Health and Mental Hygiene
+                            </Typography>
+                            <Typography gutterBottom variant="subheading" color="textPrimary" component="h3">
+                                <Button color="primary" href="https://www.google.com/maps/search/?api=1&query=125 Worth St, New York, NY 10013">125 Worth St, New York, NY 10013</Button>
+                            </Typography>
+                            <Typography>
+                                Used C# to develop desktop application<br/>
+                                Used .Net MVC and Entity Framework develop web application<br/>
+                                Used IronPython to develop automated file processing application<br/>
+                                Used SQL Server and Mongo DB as backend database<br/>
+                            </Typography>
+                         </Grid>
+                    </Grid>
+
                    
                     <Divider className={this.props.classes.divider}/>
-                    <Typography gutterBottom variant="title" color="textPrimary" component="h3">
-                        Chimera Investment Corporation
-                    </Typography>
-                    <Typography gutterBottom variant="subheading" color="textPrimary" component="h3">
-                        520 Madison Avenue, New York, NY 10022
-                    </Typography>
-                    Design tables and implement stored procedures for business applications in MS SQL database<br/>
-                    Impletement fornt-end and backend for businese applications<br/>
-                    Integrated Aladdin (BlackRock) and CAMRA(SS&C) for the company<br/>
-                    Maintain a generic job configuration application for all ETL operations<br/>
-                   
 
-                </Typography>
 
-                
+                    <Grid container>
+                         <Grid xs={3} align="center">
+                         12/2013 - 06/2014
+                         </Grid>
+                        <Grid xs={8}>
+                            <Typography gutterBottom variant="title" color="textPrimary" component="h3">
+                               NYC Administration for Children Service
+                            </Typography>
+                            <Typography gutterBottom variant="subheading" color="textPrimary" component="h3">
+                            <Button color="primary" href="https://www.google.com/maps/search/?api=1&query=150 William St, New York, NY 10038">150 William St, New York, NY 10038</Button>
+                            </Typography>
+                            <Typography>
+                                 Used knowledge of HTML, CSS and Javascript to modify web pages<br/>
+                                 Created banner, icon, edited pictures by using Photoshop<br/>
+                            </Typography>
+                         </Grid>
+                    </Grid>
             </CardContent>
         </Card>
       )

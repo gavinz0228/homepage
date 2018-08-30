@@ -5,6 +5,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid'
 const styles = theme => ({
     title:{
         paddingLeft: 50,
@@ -25,13 +26,26 @@ class Academic extends Component {
                 <Typography gutterBottom variant="headline" color="textPrimary" component="h2" className={this.props.classes.title}>
                     Academic
                 </Typography>
-                <Typography component="p" className={this.props.classes.content} >
-                    <Typography gutterBottom variant="title" color="textPrimary" component="h3">
-                        Chimera Investment Corporation
-                    </Typography>
-                    I'm a full stack developer in New York City. 
-                    I like all kinds of computer stuff and various types of sports.
-                </Typography>
+                    <Grid container>
+                         <Grid xs={3} align="center">
+                         2012 - 2016
+                         </Grid>
+                        <Grid xs={8}>
+                            <Typography gutterBottom variant="title" color="textPrimary" component="h3">
+                           City University of New York - Brooklyn College
+                            </Typography>
+                            <Typography gutterBottom variant="subheading" color="textPrimary" component="h3">
+                            Computer Science
+                            </Typography>
+                            <Typography>
+                              Honor Sciety for the Computing and Information Disciplines<br/>
+                            Overall GPA: 3.75 <br/>
+                            Major GPA: 3.9 <br/>
+                            Dean's List : 2012 - 2016<br/>
+                          
+                            </Typography>
+                         </Grid>
+                    </Grid>
             </CardContent>
             
         </Card>
