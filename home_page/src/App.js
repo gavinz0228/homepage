@@ -28,7 +28,9 @@ const styles = theme => ({
 });
 
 class App extends Component {
-
+  componentDidMount(){
+    document.title="Welcome to Gavin's Homepage!"
+  }
   render() {
     return (
       <Grid container className={this.props.classes.root}>
