@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import NavBar from './components/NavBar';
 import Profile from './components/Profile';
 import Grid from '@material-ui/core/Grid'
@@ -16,7 +15,10 @@ const styles = theme => ({
   },
   contentArea:{
     width: 1007,
-    margin: 20,
+    marginTop: 20,
+    marginBottom: 30,
+    marginLeft: 5,
+    marginRight: 5,
     padding: 20,
     backgroundColor: "#FAFAFA",
   },

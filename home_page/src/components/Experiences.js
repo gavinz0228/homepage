@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
@@ -33,16 +32,16 @@ class Experiences extends Component {
                     Experiences
                     </Typography>
                     <Grid container>
-                         <Grid xs={3} align="center">
+                         <Grid item xs={3} align="center">
                          01/2016 - Present
                          </Grid>
-                        <Grid xs={8}>
+                        <Grid item xs={8}>
                             <Typography gutterBottom variant="title" color="textPrimary" component="h3">
                             Chimera Investment Corporation
                             </Typography>
                             <Typography gutterBottom variant="subheading" color="textPrimary" component="h3">
                           <Button className={this.props.classes.locationButton} color="primary" href="https://www.google.com/maps/search/?api=1&query=520 Madison Avenue, New York, NY 10022"> 
-                             <img src="/images/location.svg" width="20" height="20"  />
+                             <img alt="L" src="/images/location.svg" width="20" height="20"  />
                              520 Madison Avenue, New York, NY 10022
                          </Button>
                             </Typography>
@@ -58,16 +57,16 @@ class Experiences extends Component {
                     <Divider className={this.props.classes.divider}/>
                     
                     <Grid container>
-                         <Grid xs={3} align="center">
+                         <Grid item xs={3} align="center">
                          07/2014 - 12/2015
                          </Grid>
-                        <Grid xs={8}>
+                        <Grid item xs={8}>
                             <Typography gutterBottom variant="title" color="textPrimary" component="h3">
                                NYC Department of Health and Mental Hygiene
                             </Typography>
                             <Typography gutterBottom variant="subheading" color="textPrimary" component="h3">
-                                <Button color="primary" href="https://www.google.com/maps/search/?api=1&query=125 Worth St, New York, NY 10013">
-                                <img src="/images/location.svg" width="20" height="20"  />
+                                <Button  className={this.props.classes.locationButton}  color="primary" href="https://www.google.com/maps/search/?api=1&query=125 Worth St, New York, NY 10013">
+                                <img alt="L" src="/images/location.svg" width="20" height="20"  />
                                 125 Worth St, New York, NY 10013</Button>
                             </Typography>
                             <Typography>
@@ -83,16 +82,16 @@ class Experiences extends Component {
                     <Divider className={this.props.classes.divider}/>
 
                     <Grid container>
-                         <Grid xs={3} align="center">
+                         <Grid item xs={3} align="center">
                          12/2013 - 06/2014
                          </Grid>
-                        <Grid xs={8}>
+                        <Grid item xs={8}>
                             <Typography gutterBottom variant="title" color="textPrimary" component="h3">
                                NYC Administration for Children Service
                             </Typography>
                             <Typography gutterBottom variant="subheading" color="textPrimary" component="h3">
-                            <Button color="primary" href="https://www.google.com/maps/search/?api=1&query=150 William St, New York, NY 10038">
-                            <img src="/images/location.svg" width="20" height="20"  />
+                            <Button  className={this.props.classes.locationButton}  color="primary" href="https://www.google.com/maps/search/?api=1&query=150 William St, New York, NY 10038">
+                            <img alt="L" src="/images/location.svg" width="20" height="20"  />
                             150 William St, New York, NY 10038</Button>
                             </Typography>
                             <Typography>

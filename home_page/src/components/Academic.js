@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid'
 const styles = theme => ({
@@ -27,10 +25,10 @@ class Academic extends Component {
                     Academic
                 </Typography>
                     <Grid container>
-                         <Grid xs={3} align="center">
+                         <Grid item xs={3} align="center">
                          2012 - 2016
                          </Grid>
-                        <Grid xs={8}>
+                        <Grid item xs={8}>
                             <Typography gutterBottom variant="title" color="textPrimary" component="h3">
                            City University of New York - Brooklyn College
                             </Typography>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -12,14 +11,12 @@ const styles = theme => ({
       maxWidth: 360,
       backgroundColor: theme.palette.background.paper,
     },
-    profileImg:{
-        paddingRight:1
-    },
+
     pictFrame:{
-        paddingRight:30
+        paddingRight:"3%"
     },
     area:{
-        marginTop: 10
+        marginTop: 30
     },
     textArea:{
         padding: 15,
@@ -33,7 +30,7 @@ class Profile extends Component {
       return (
     <Card >
         <Grid container>
-        <Grid xs={3} align="center" className={ this.props.classes.pictFrame}>
+        <Grid item xs={3} align="center" className={ this.props.classes.pictFrame}>
             <CardMedia
                 component="img"
                 image="images/profile.jpg"
@@ -41,7 +38,7 @@ class Profile extends Component {
                 className={ this.props.classes.profileImg}
                 />
         </Grid>
-        <Grid xs={8}>
+        <Grid item xs={8}>
 
         <Typography variant="title" color="primary" className={ this.props.classes.area}>
                 I am
@@ -54,7 +51,7 @@ class Profile extends Component {
             <Typography variant="title"  color="primary">
                 I use
             </Typography>
-            <Typography className={ this.props.classes.textArea}>
+            <Grid container className={ this.props.classes.textArea}>
                 <Chip label="C#" className={ this.props.classes.chips}/>
                 <Chip label="MS SQL" className={ this.props.classes.chips}/>
                 <Chip label="Entity Framework" className={ this.props.classes.chips}/>
@@ -62,12 +59,10 @@ class Profile extends Component {
                 <Chip label="Javascript" className={ this.props.classes.chips}/>
                 <Chip label="MongoDB" className={ this.props.classes.chips}/>
                 <Chip label="C++/C" className={ this.props.classes.chips}/>
-            </Typography>
+            </Grid>
 
-
-
-                </Grid>
-              </Grid>
+        </Grid>
+    </Grid>
 
 
 
