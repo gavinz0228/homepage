@@ -47,7 +47,7 @@ class NavBar extends Component {
     }
     render() {
       return (
-            <AppBar position="sticky" color="primary">
+            <AppBar position="sticky" color="primary" style = {{borderBottomWidth: 5, borderBottomColor: "white", borderBottomStyle:"solid"}}>
                 <Toolbar>
                     <Button color="inherit" onClick={this.nameOnCLick} >
                         Gavin (Jialang) Zhang

@@ -26,7 +26,7 @@ const styles = theme => ({
     backgroundColor: "#FAFAFA",
   },
   divider:{
-    margin: 15
+    margin: 20
   }
 });
 
@@ -45,8 +45,7 @@ class App extends Component {
               <Experiences />
               <Divider className={this.props.classes.divider}/>
               <Academic />
-              <Divider className={this.props.classes.divider}/>
-              <Projects />
+
           </Paper>
         </Grid>
       </Grid>

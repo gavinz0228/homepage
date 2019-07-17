@@ -10,10 +10,10 @@ const styles = theme => ({
         paddingTop: 20
     },
     content:{
-        marginLeft:240
+        marginLeft:240,
     },
     divider:{
-        margin:10
+        margin:15
     }
   });
 class Academic extends Component {
