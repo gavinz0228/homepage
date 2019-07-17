@@ -9,7 +9,7 @@ import { withStyles } from '@material-ui/core/styles';
 const styles = theme => ({
     socialMediaIcon: {
         width: 32,
-        height: 32  
+        height: 32,
     },
   });
 class NavBar extends Component {
@@ -47,7 +47,7 @@ class NavBar extends Component {
     }
     render() {
       return (
-            <AppBar position="sticky" color="default">
+            <AppBar position="sticky" color="primary">
                 <Toolbar>
                     <Button color="inherit" onClick={this.nameOnCLick} >
                         Gavin (Jialang) Zhang

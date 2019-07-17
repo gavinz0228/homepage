@@ -11,7 +11,10 @@ import Projects from './components/Projects';
 const styles = theme => ({
   root: {
     backgroundImage: "url('/images/background.jpg')",
-    backgroundSize:"cover",
+    backgroundSize:"100% 100%",
+    height: "100vh",
+    resize: "both",
+    overflowY: "scroll",
   },
   contentArea:{
     width: 1007,
