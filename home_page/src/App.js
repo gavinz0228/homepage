@@ -8,6 +8,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Experiences from './components/Experiences';
 import Academic from './components/Academic';
 import Projects from './components/Projects';
+
 const styles = theme => ({
   root: {
     backgroundImage: "url('/images/background.jpg')",
@@ -24,6 +25,7 @@ const styles = theme => ({
     marginRight: 5,
     padding: 20,
     backgroundColor: "#FAFAFA",
+    animation: "1s ease-out 0s 1 rotate150",
   },
   divider:{
     margin: 20

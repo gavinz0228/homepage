@@ -46,10 +46,10 @@ class Experiences extends Component {
                          </Button>
                             </Typography>
                             <Typography>
-                            Design tables and implement stored procedures for business applications in MS SQL database<br/>
-                            Impletement fornt-end and backend for businese applications<br/>
+                            Designed tables and implement stored procedures for business applications in MS SQL database<br/>
+                            Impletemented fornt-end and backend for businese applications<br/>
                             Integrated Aladdin (BlackRock) and CAMRA(SS&C) for the company<br/>
-                            Maintain a generic job configuration application for all ETL operations<br/>
+                            Maintained a generic job configuration application for all ETL operations<br/>
                             </Typography>
                          </Grid>
                     </Grid>
@@ -70,10 +70,10 @@ class Experiences extends Component {
                                 125 Worth St, New York, NY 10013</Button>
                             </Typography>
                             <Typography>
-                                Used C# to develop desktop application<br/>
-                                Used .Net MVC and Entity Framework develop web application<br/>
-                                Used IronPython to develop automated file processing application<br/>
-                                Used SQL Server and Mongo DB as backend database<br/>
+                                Developed desktop application with C#, SQL Server and Mongo DB as backend database <br/>
+                                Developed web application .Net MVC and Entity Framework <br/>
+                                Developed automated file processing application with IronPython <br/>
+                                <br/>
                             </Typography>
                          </Grid>
                     </Grid>
@@ -95,8 +95,8 @@ class Experiences extends Component {
                             150 William St, New York, NY 10038</Button>
                             </Typography>
                             <Typography>
-                                 Used knowledge of HTML, CSS and Javascript to modify web pages<br/>
-                                 Created banner, icon, edited pictures by using Photoshop<br/>
+                                 Maintained and enhance website with HTML, CSS and Javascript<br/>
+                                 Designed banner, icon, edited pictures by using Photoshop<br/>
                             </Typography>
                          </Grid>
                     </Grid>
