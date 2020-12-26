@@ -19,6 +19,9 @@
         margin-top: 50px;
     }
 }
+body{
+    line-height: 1;
+}
 #main-box{
     margin-top: 50px;
 }
@@ -40,10 +43,14 @@
 .navbar-brand-text{
     font-size: 15px;
     margin-left: 10px;
+    line-height: 40px;
+}
+.no-padding{
+    padding: 0px 0px 0px 0px !important;
 }
 #headshot{
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     border-radius: 35px 35px 35px 35px ;
   }
 .icon-list{
