@@ -1,0 +1,80 @@
+body{
+    height:100vh;
+    background-color: #333;
+}
+#myInfo{
+    margin-top: 75px;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+.parallax-stream {
+    text-align: center;
+    background-image: url('../static/images/stream.jpg');
+    min-height: 100%; 
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .parallax-campus {
+    background-image: url('../static/images/campus.jpg');
+    min-height: 100%;  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .parallax-nyc {
+    background-image: url('../static/images/nyc.jpg');
+    min-height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .parallax-content{
+    position:relative;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width:100%;
+    font-size: 1.5em;
+    text-shadow: #111 2px 2px 2px;
+  }
+  .text-panel{
+    height: 10em;
+    line-height: 10em; 
+  }
+  .text-background{
+    margin: 0 auto;
+    min-width: 15em;
+    max-width: 45em;
+    background-color: #111;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-top: 25px;
+    padding-right: 30px;
+    opacity: 0.85;
+    font-size: 0.85em;
+  }
+  .text-background-light{
+    margin: 0 auto;
+    width: 30em;
+    background-color:  rgba(255, 255, 255, .9);
+  }
+  #bottom-text{
+    text-align: center
+  }

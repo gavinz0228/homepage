@@ -1,0 +1,51 @@
+@media only screen and (max-width: 999px) {
+    #main{
+        width: 100% !important;
+        padding-top: 30px;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    #main{
+        width: 1000px !important;
+        margin: 0 auto;
+        width:100%;
+        text-align: left;
+        margin-top: 100px;
+        padding-top: 30px;
+    }
+    #main-box{
+        margin-top: 50px;
+    }
+}
+#main-box{
+    margin-top: 50px;
+}
+#cashflows-table{
+    display: none;
+}
+#center-element{
+    margin: 0 auto;
+}
+.row-space{
+    padding-top: 10px;
+}
+.navbar{
+    font-weight: bold;
+}
+#headshot{
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 3em 3em 3em 3em ;
+  }
+  .icon-list{
+    text-align: right;
+  }
+  .icon-list li{
+    padding: 0px 0px 0px 0px;
+    margin-left: 0em;
+  }
+  .icon-list li img{
+    height: 2.5em;
+    width: 2.5em;
+  
+  }

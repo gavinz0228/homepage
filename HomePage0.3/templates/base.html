@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+{% block mainArea %}
+<div id="main" class="container">
+{% block tool %}{% endblock %}
+
+</div>
+<script>
+var viewData;
+
+viewData = {};
+
+$(function() {
+  // Update the viewData object with the current field keys and values.
+  function updateViewData(key, value) {
+      viewData[key] = value;
+  }
+
+  // Register all bindable elements
+  function detectBindableElements() {
+      var bindableEls;
+
+      bindableEls = $('[data-bind]');
+
+      // Add event handlers to update viewData and trigger callback event.
+      bindableEls.on('change', function() {
+          var $this;
+          
+          $this = $(this);
+          
+          updateViewData($this.data('bind'), $this.val());
+
+          $(document).trigger('updateDisplay');
+      });
+
+      // Add a reference to each bindable element in viewData.
+      bindableEls.each(function() {
+          updateViewData($(this));
+      });
+  }
+
+  // Trigger this event to manually update the list of bindable elements, useful when dynamically loading form fields.
+  $(document).on('updateBindableElements', detectBindableElements);
+
+  detectBindableElements();
+});
+
+window.onload = function() {
+
+  init();
+};
+
+
+</script>
+{% endblock %}

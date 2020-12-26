@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block extraHeaderItems %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='myInfo.css') }}" />
+{% endblock %}
+
+{% block mainArea %}
+<div id="myInfo">
+    <main role="main" class="container-fluid" id="myInfoContent">
+        <div class ="parallax-stream">
+            <div class="parallax-content">
+                <h1>I'm Gavin (Jialang) Zhang, </h1>
+                <p>a full stack developer in finance industry in New York City. </p>
+                <br/>
+                <p>
+                    <span class="badge badge-primary">#Fin-tech</span>
+                    <span class="badge badge-primary">#Fixed-income</span>
+                    <span class="badge badge-primary">#Mortgage-backed securities</span>
+                    <span class="badge badge-primary">#Cash flows analysis</span>
+                </p>
+
+                <p>
+                    <span class="badge badge-success">C#</span>
+                    <span class="badge badge-success">.Net</span>
+                    <span class="badge badge-success">Python</span>
+                    <span class="badge badge-success">MS SQL Server</span>
+                    <span class="badge badge-success">.Net MVC </span>
+                    <span class="badge badge-success">Rest API </span>
+                </p>   
+                <br/>
+                <br/>
+                <p>
+                    <button href="javascript:void(0)" class="btn btn-lg btn-light" onclick="scrollToMoreInfo()">Learn More About Me</button>
+                </p>
+            </div>
+
+        </div>
+        <div class="parallax-nyc">
+            <div class="parallax-content">
+                <div id="job0" class="text-background">
+                    <h1>I work and live in New York City!</h1>
+                </div>
+                <div id="job1" class="text-background">
+                </div>
+                <div class="text-background">
+                    <a href="https://www.linkedin.com/in/jialang-zhang-91785271/">View More on My Linkedin Page</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="parallax-campus">
+            <div class="parallax-content">
+                <div id ="education" class="text-background">
+
+                </div>
+            </div>
+        </div>
+        <div id="bottom-text">
+            Designed and coded by Gavin (Jialang) Zhang
+        </div>
+    </main>
+</div>
+<script src="/static/js/myInfo.js"></script>
+{% endblock %}

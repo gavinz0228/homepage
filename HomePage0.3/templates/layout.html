@@ -1,0 +1,70 @@
+
+
+<!doctype html>
+<html>
+
+<head>
+	<title>Gavin(Jialang) Zhang's HomePage, Financial Tools</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gavin Zhang's Home Page, Financial Tools by Gavin(Jialang) Zhang">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Gavin Zhang, savings calculator,mortgage calculator,inflation calculator,bond yield calculator,yield curve">
+    <meta name="author" content="Gavin Jialang Zhang">
+    <script type="text/javascript" src="{{ url_for('static', filename='/js/axios.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='/js/jquery-3.5.1.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/bootstrap4.5.3.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" />
+    {% block extraHeaderItems %}{% endblock %}
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid row">
+          <div class="col-2">
+            <a class="navbar-brand" href="/">
+                <img src="{{ url_for('static', filename='images/headshot.jpeg') }}" id="headshot"/> Gavin(Jialang) Zhang
+            </a>
+          </div> 
+          <div id="navbar-item-list" class="collapse navbar-collapse col-8">
+            <ul class="navbar-nav pl-md-5 mr-auto text-align" id="center-element">
+              <li class="nav-item">
+                <a class="nav-link active" href="/">My Info</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/yieldCurve">Yield Curve Chart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/yieldCalculator">Bond Yield Calculator</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/savingsCalculator">Savings Calculator</a>
+              </li>
+              <li class="nav-item"> 
+                <a class="nav-link" href="/mortgageCalculator">Mortgage Calculator</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/inflationCalculator">Inflation Calculator</a>
+              </li>
+            </ul>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-item-list" aria-controls="#navbar-item-list" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="col-2 collapse navbar-collapse justify-content-end">
+            <ul class="list-inline icon-list">
+                <li class="list-inline-item"> <a href="mailto:gavinz0228@gmail.com" title="Send Email"><img src="{{ url_for('static', filename='images/gmail.svg') }}"/></a></li>
+                <li class="list-inline-item"> <a href="https://github.com/gavinz0228" title="Github"><img src="{{ url_for('static', filename='images/github.svg') }}"/></a></li>
+                <li class="list-inline-item"> <a href="https://www.linkedin.com/in/jialang-zhang-91785271/" title="LinkedIn"><img src="{{ url_for('static', filename='images/linkedin.svg') }}"/></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      {% block mainArea %}{% endblock %}
+
+
+</body>
+
+</html>
