@@ -14,7 +14,7 @@
     <script src="{{ url_for('static', filename='/js/jquery-3.5.1.min.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/bootstrap4.5.3.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}" />
     <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" />
     {% block extraHeaderItems %}{% endblock %}
 </head>
@@ -23,9 +23,11 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid row">
           <div class="col-2">
-            <a class="navbar-brand" href="/">
-                <img src="{{ url_for('static', filename='images/headshot.jpeg') }}" id="headshot"/> Gavin(Jialang) Zhang
+            <a class="navbar-brand d-inline-flex" href="/">
+                <img src="{{ url_for('static', filename='images/headshot.jpeg') }}" id="headshot"/>
+              <span class="collapse navbar-collapse navbar-brand-text align-middle">Gavin(Jialang) Zhang</span>
             </a>
+
           </div> 
           <div id="navbar-item-list" class="collapse navbar-collapse col-8">
             <ul class="navbar-nav pl-md-5 mr-auto text-align" id="center-element">
