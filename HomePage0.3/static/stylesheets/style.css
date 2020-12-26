@@ -2,6 +2,7 @@
     #main{
         width: 100% !important;
         padding-top: 30px;
+        margin-top: 50px;
     }
 }
 @media only screen and (min-width: 1000px) {
@@ -12,6 +13,7 @@
         text-align: left;
         margin-top: 100px;
         padding-top: 30px;
+        margin-top: 50px;
     }
     #main-box{
         margin-top: 50px;
@@ -44,19 +46,19 @@
     height: 35px;
     border-radius: 35px 35px 35px 35px ;
   }
-  .icon-list{
+.icon-list{
     text-align: right;
     margin: 0 0 0 0;
-  }
-  .icon-list ul{
-      margin: 0px 0px 0px 0px;
-  }
-  .icon-list li{
+}
+.icon-list ul{
+    margin: 0px 0px 0px 0px;
+}
+.icon-list li{
     padding: 0px 0px 0px 0px;
     margin-left: 0em;
-  }
-  .icon-list li img{
+}
+.icon-list li img{
     height: 40px;
     width: 40px;
-  
-  }
+
+}
