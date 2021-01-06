@@ -22,16 +22,28 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 
 <script>
+
+function formatDateStr(date){
+    const year = date.getFullYear();
+    let month = (date.getMonth() + 1)
+    let day = date.getDate()
+    if(month < 10)
+      month = "0" + month;
+    if(day < 10)
+      day = "0" + day;
+    return year + "-" + month + "-" + day;
+  }
 const today = new Date();
 const lastMonth = new Date(today);
-const newMonth = today.getMonth() - 1;
+let newMonth = today.getMonth() - 1;
 if(newMonth < 0){
     newMonth += 12;
-    lastMonth.setYear(lastMonth.getYear() - 1);
+    lastMonth.setYear(lastMonth.getFullYear() - 1);
 }
 lastMonth.setMonth(newMonth);
 
-dates = {"dates":["2019-06-01","2019-12-31","2020-06-01", lastMonth.getFullYear()+"-"+ (lastMonth.getMonth() + 1)+"-"+lastMonth.getDate()]}
+dates = {"dates":["2019-06-01","2019-12-31","2020-06-01", formatDateStr(lastMonth)]}
+    
 
     function renderChart(){
       axios.post('/getYieldCurve/', dates)
@@ -42,7 +54,7 @@ dates = {"dates":["2019-06-01","2019-12-31","2020-06-01", lastMonth.getFullYear(
                     const ctx = document.getElementById("yieldCurveChart");
                     const columns = ['1month', '2month', '6month', '1year', '2year', '3year', '5year', '7year', '10year', '20year', '30year']
                     const datasets = []
-                    for(var i = 0 ;i< yieldData.length; i++){
+                    for(let i = 0 ;i< yieldData.length; i++){
                       datasets.push({ "data": columns.map(c => yieldData[i][c]) , "label": yieldData[i].date, "borderColor": '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6)})
                     }
                     const myChart = new Chart(ctx, {
@@ -87,7 +99,7 @@ dates = {"dates":["2019-06-01","2019-12-31","2020-06-01", lastMonth.getFullYear(
         }
     
     function init(){
-        $('[data-bind="dateToAdd"]').val(today.getFullYear()+"-"+ (today.getMonth() + 1)+"-"+today.getDate());
+        $('[data-bind="dateToAdd"]').val(formatDateStr(today));
         renderDateList();
         renderChart();
     }
