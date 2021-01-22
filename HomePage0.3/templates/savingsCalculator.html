@@ -21,9 +21,12 @@
   <div class="form-row form-group">
     <div class="col-12 col-sm-6 input-group">
       <div class="input-group-prepend">
-          <span class="input-group-text">Yield of Savings</span>
+          <span class="input-group-text">Yield of Investment</span>
         </div>
-      <input type="number" class="form-control" placeholder="Yield of Savings" data-bind="yieldOfSavings">
+      <input type="number" class="form-control" placeholder="Yield of Investment" data-bind="yieldOfInvestment">
+      <div class="input-group-append">
+        <span class="input-group-text">%</span>
+      </div>
     </div>
     <div class="col-12 col-sm-6 input-group">
       <div class="input-group-prepend">
@@ -73,7 +76,7 @@
         function init(){
             $('[data-bind="startAmount"]').val('200000').trigger("change");
             $('[data-bind="monthlyContribution"]').val('5000').trigger("change");
-            $('[data-bind="yieldOfSavings"]').val(0.07).trigger("change");
+            $('[data-bind="yieldOfInvestment"]').val(7).trigger("change");
             $('[data-bind="numOfYears"]').val(20).trigger("change");
         }
     </script>

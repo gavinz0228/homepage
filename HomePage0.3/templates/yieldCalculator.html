@@ -37,6 +37,9 @@
               <span class="input-group-text">Coupon Rate</span>
           </div>
         <input type="number" class="form-control" placeholder="Coupon" data-bind="coupon">
+        <div class="input-group-append">
+          <span class="input-group-text">%</span>
+        </div>
       </div>
       <div class="col-12 col-sm-6 input-group">
           <div class="input-group-prepend">
@@ -48,6 +51,14 @@
               <option value="2">Semi-annual</option>
               <option value="1">Annual</option>
           </select>
+      </div>
+    </div>
+    <div class="form-row form-group">
+      <div class="col-12 col-sm-6 input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Settlement Date</span>
+        </div>
+        <input type="date" class="form-control" placeholder="Settlement Date" data-bind="settleDate">
       </div>
     </div>
     <span>Day count of 30/360, no business day adjustment and clean price are assumed in this calculation.</span>
@@ -86,8 +97,9 @@ function calculate(){
         $('[data-bind="maturityDate"]').val('2030-01-01').trigger("change");
         $('[data-bind="faceValue"]').val(10000).trigger("change");
         $('[data-bind="price"]').val(100).trigger("change");
-        $('[data-bind="coupon"]').val(0.02).trigger("change");
+        $('[data-bind="coupon"]').val(2).trigger("change");
         $('[data-bind="pmtFrequency"]').trigger("change");
+        $('[data-bind="settleDate"]').val(formatDateStr(new Date())).trigger("change");
     }
 </script>
 {% endblock %}

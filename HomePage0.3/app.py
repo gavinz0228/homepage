@@ -40,7 +40,7 @@ def savings_calculate():
     start_amount = float(params['startAmount'])
     monthly_contrib = float(params['monthlyContribution'])
     start_year = datetime.now().year
-    yld = float(params['yieldOfSavings'])
+    yld = float(params['yieldOfInvestment']) / 100
     return calculate_savings(start_amount, monthly_contrib, yld, start_year, num_years)
 
 @app.route('/calculateBondYield/', methods=['POST'])
@@ -49,16 +49,17 @@ def calculate_bond_yield():
     faceValue = float(content['faceValue'])
     price = float(content['price'])
     pmtFreq = int(content['pmtFrequency'])
-    coupon = float(content['coupon'])
+    coupon = float(content['coupon']) / 100
     startDate = datetime.strptime(content['startDate'], '%Y-%m-%d')
     endDate = datetime.strptime(content['maturityDate'], '%Y-%m-%d')
-    return simple_yield_calc(faceValue, price, startDate, endDate, pmtFreq, coupon, 0, pmtFreq)
+    settleDate = datetime.strptime(content['settleDate'], '%Y-%m-%d')
+    return simple_yield_calc(faceValue, price, startDate, endDate, pmtFreq, coupon, 0, pmtFreq, settleDate)
 
 @app.route('/calculateInflation/', methods=['POST'])
 def calculate_inflation_for_year():
     content = request.get_json()
     curr_amount = float(content['currAmount'])
-    rate = float(content['rate'])
+    rate = float(content['rate']) / 100
     tartget_year = float(content['targetedYear'])
     content['calculatedAmount'] = calculate_inflation(rate, curr_amount, datetime.now().year, tartget_year)
     return content
@@ -67,7 +68,7 @@ def calculate_inflation_for_year():
 def calculate_mortgage():
     content = request.get_json()
     principal = -1 * float(content['amountToBorrow'])
-    rate = float(content['rate'])
+    rate = float(content['rate']) / 100
     num_years = float(content['numYears'])
     content['monthly_payment'] = calculate_monthly_mortgage(principal, rate, num_years)
     return content

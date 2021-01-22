@@ -37,6 +37,9 @@
           <span class="input-group-text">Interest Rate</span>
       </div>
       <input type="number" class="form-control" placeholder="Interest Rate" data-bind="rate">
+      <div class="input-group-append">
+        <span class="input-group-text">%</span>
+      </div>
     </div>
     <div class="col-12 col-sm-6 input-group">
       <div class="input-group-prepend">
@@ -74,7 +77,7 @@
         function init(){
             $('[data-bind="homePrice"]').val('1000000').trigger("change");
             $('[data-bind="numYears"]').val(30).trigger("change");
-            $('[data-bind="rate"]').val('0.03').trigger("change");
+            $('[data-bind="rate"]').val(3).trigger("change");
             $('[data-bind="percentDownPayment"]').val('22').trigger("change");
             $('[data-bind="otherPayment"]').val('300').trigger("change");
         }
