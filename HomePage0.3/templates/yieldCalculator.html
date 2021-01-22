@@ -85,7 +85,7 @@ function calculate(){
                 console.log(res.data);
                 $('#calculated-yield').text("Yield Calculated: " +  res.data.yield);
                 $('#cashflow-tb-body').html(res.data.cashFlows.map((cf, i)=>
-                    "<tr><td>"+(i+1)+"</td><td>"+cf[0]+"</td><td>"+cf[1]+"</td><td>"+cf[2]+"</td></tr>").join('\r\n'));
+                    "<tr><td>"+(i+1)+"</td><td>"+cf[0]+"</td><td>"+cf[1].toFixed(2)+"</td><td>"+cf[2].toFixed(2)+"</td></tr>").join('\r\n'));
                 $('#cashflows-table').show("slow");
             })
             .catch(err=>{
