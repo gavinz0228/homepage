@@ -94,9 +94,16 @@ def get_resume():
   ],
   "positions": [
     {
+      "company": "Bloomberg L.P.",
+      "startDate": "07/2021",
+      "endDate": "Present",
+      "location": "731 Lexington Ave, New York, NY 10022",
+      "summary": "Senior Software Engineer - Buy-Side Trading Platform AIM"
+    },
+    {
       "company": "SS&C Technologies",
       "startDate": "12/2019",
-      "endDate": "Current",
+      "endDate": "07/21",
       "location": "24 W. 25th Street, New York, NY 10010",
       "summary": "Participate in core development for a investment operations and accounting system - Singularity\\nSpecialize in fixed-income-related financial products design and development(bonds, mortgage-backed securities, repo, and etc.) \\nAnalyze yield, amortization, interest accrual and cash-flows-related issues \\nMicrosoft tech stack C#, MS SQL Server, .Net MVC\\n"
     },

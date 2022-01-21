@@ -12,6 +12,7 @@ function loadProfile()
           console.log(res.data);
           $("#job0").html(renderJob(res.data.positions[0]));
           $("#job1").html(renderJob(res.data.positions[1]));
+          $("#job2").html(renderJob(res.data.positions[2]));
           $("#education").html(renderEducation(res.data.educations[0]));
 
       })
