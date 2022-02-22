@@ -5,4 +5,4 @@ RUN python3 -m pip install --upgrade pip
 
 
 RUN python3 -m pip install -r /app/requirements.txt
-CMD ["python", "/app/run.py", "80"]
+CMD ["python", "/app/wsgi.py", "80"]
