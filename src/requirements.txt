@@ -1,3 +1,4 @@
 flask
 QuantLib-Python
 pandas
+gunicorn
